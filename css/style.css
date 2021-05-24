@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    font: normal 26px arial;
+}
+
+section {
+    max-width: 960px;
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+}
+
+.formContainer {
+    max-width: 230px;
+    background-color: rgba(255, 255, 255, 0.678);
+    padding: 20px;
+    float: right;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+#botao:active {
+    background-color: white;
+    color: #48C5CE;
+}
+
+#botao:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #202121;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.text {
+    display: inline-block;
+    text-align: left;
+    max-width: 40%;
+    color: white;
+    margin-left: 40px;
+}
+
+#image {
+    display: inline-block;
+}
+
+.picture {
+    width: 160px;
+}
+
+.text h3, .text p {
+    margin-bottom: 20px; 
+}
+
+.text h3 {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 700px) {
+    .formContainer {
+        max-width: 300px;
+        float: none;
+        margin: auto;
+    }
+
+    .picture {
+        float: none;
+        margin: auto;
+        transform: none;
+    }
+
+    .text {
+        max-width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+}
